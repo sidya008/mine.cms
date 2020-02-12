@@ -38,6 +38,6 @@ class DI
      */
     private function has($key)
     {
-        return isset($this->container[$key]);
+        return isset($this->container[$key]) ? $this->container[$key] : null;
     }
 }
