@@ -1,0 +1,16 @@
+{
+    "name": "sidya/mine.cms",
+    "authors": [
+        {
+            "name": "Dmitry Sorvachev",
+            "email": "sidya008@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Engine\\": "engine",
+            "Engine\\DI\\": "engine/DI"
+        }
+    }
+}
