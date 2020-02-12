@@ -9,6 +9,15 @@ try{
     // Dependency injection
     $di = new DI();
 
+    $services = require __DIR__ . '/Config/service.php';
+
+    //Init services
+    foreach ($services as $service)
+    {
+        $provider = new $service($di);
+        $provider->init();
+    }
+
     $cms = new Cms($di);
     $cms->run();
 }catch (\ErrorException $errorException)

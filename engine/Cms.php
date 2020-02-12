@@ -27,6 +27,6 @@ class Cms
      */
     public function run()
     {
-        echo 'Hello!';
+        print_r($this->di);
     }
 }
